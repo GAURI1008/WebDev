@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <h6>Please fill in this form to create to an account.</h6>
+    <hr>
+
+
+<form action="/action_page.php">
+  <label for="fname">Email</label>
+  <input type="text" id="fname" name="fname" value="Enter Email">
+  <label for="lname">Password</label>
+  <input type="text" id="lname" name="lname" value="Enter password">
+  <label for="lname">Repeat Password</label>
+  <input type="text" id="lname" value="Repeat password"><br>
+  <label for="lname">Date of Birth</label>
+  <input type="text" id="lname" name="lname" value="Enter DOB">
+  <label>Enter phone number</label>
+  <input type="text" id="lname" name="lname" value="Enter Number"><br>
+  <h2>Choose your gender</h2>
+  <input type="radio" id="MALE" name="GENDER" value="MALE">
+  <label for="MALE">Male</label><br>
+  <input type="radio" id="FEMALE" name="GENDER" value="FEMALE">
+  <label for="FEMALE">Female</label><br>
+  <input type="radio" id="OTHERS" name="GENDER" value="OTHERS">
+  <label for="FEMALE">Others</label>
+</form> 
+
+
+  <p>By creating an account you agree to our Terms&Privacy</p>
+  
+
+  <input type="sign up" value="Sign Up">
+  <input type="cancel" value="Cancel">
+</form> 
+
+
+<!--Label and input for username-->
+<!--Button to submit the forms-->
+</body>
+</html>
