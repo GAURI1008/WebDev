@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         p{
-            color :aqua!important;
+            color :aqua;
+        }
+        div p{
+        color:hotpink
         }
         .box{
             width:200px;
@@ -20,16 +24,29 @@
         #intro {
          color:chocolate;
         }
-        .note {
-         color:black;
+        p.note{
+            color:cadetblue;
         }
+        .css-unit{
+            font-size:2em;
+            color:brown;
+            background-color:bisque;
+        }
+        .note {
+         color:#d2dd07;
+         background-color: red;
+        }
+        html{font-size: 16px;}
+        .parent{font-size:20px;}
+        .em-text{font-size:2em}
+        .rem-text{font-size:2rem;}
     </style>
      
 </head>
 <body>
     <header>
         <h1 class="box">MY COLLEGE</h1>
-        <p style="color :rgb(245, 18, 18)">This website is about my college.</p>
+        <p style="color :rgb(245, 18, 18)" >This website is about my college.</p>
     </header>
     <nav>
         <ul>
@@ -48,6 +65,20 @@
         <h3>College's Curriculum</h3>
         <p >The Curriculum is heavly focused on problem solving,coding and building .</p>
     </section>
+     <div>
+        <p>child p</p>
+        <div style="font-sixe:20px">
+            <p>child p 2</p>
+            <strong><p>strong</p></strong>
+        </div>
+        <span><p style="font-size:50px;">span p</p></span>
+    
+    <p class="css-unit">another paragraph</p>
+    </div>
+    <div class="parent">
+    <p class="em-text">I use em</p>
+    <p class="rem-text">I use rem</p>
+     </div>
     <article>
         <h3 class="box">Related links</h3>
         <ul>
@@ -82,5 +113,5 @@
         <p style="color : blue; font-size: 16px;">&copy; 2026My website.All rights reserved.</p>
         <p>contact : contact@gmail.com</p>
     </footer>
-</body>
+</html>
 </html>
