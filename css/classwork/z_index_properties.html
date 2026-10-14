@@ -2,20 +2,36 @@
 <html>
 <head>
 <style>
-img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
+  html, body {
+    margin: 0;
+  }
+
+  body {
+    position: relative;     /* the image is positioned relative to the body */
+    min-height: 100vh;      /* body is at least as tall as the window */
+  }
+
+  img {
+    position: absolute;     /* scrolls with the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;           /* matches the full height of the body */
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  h1, p {
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  }
 </style>
 </head>
 <body>
 
 <h1>This is a heading</h1>
-<img src=" 31 Sfondi Van Gogh 4K - Arte famosa con Van Gogh.jpeg">
+<img src="31 Sfondi Van Gogh 4K - Arte famosa con Van Gogh.jpeg" alt="Van Gogh painting">
 <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
 
 </body>
 </html>
-
