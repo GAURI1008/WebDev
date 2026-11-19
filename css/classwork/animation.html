@@ -5,7 +5,9 @@
 div {
   width: 100px;
   height: 100px;
-  background-color: aqua;
+ 
+  background: linear-gradient(90deg, aqua, rgb(80, 75, 173), rgb(255, 238, 0), #a80077, aqua);
+ background-size: 400% 100%;
   animation-name: myAnimation;
   animation-duration: 4s;
   position:relative;
@@ -15,11 +17,11 @@ div {
 }
 
 @keyframes myAnimation {
-  0% {background-color: aqua; left:0px;top:0px;}
-  40% {background-color: rgb(8, 0, 255); left:200px;top:0px;}
-  60% {background-color: rgb(0, 255, 8); left:0px;top:200px;}
-  80% {background-color: rgb(255, 238, 0); left:0px;top:200px;}
-  100% {background-color: #a80077; left:0px;top:0px;}
+  0% {background-color: aqua;border-radius: 0%; left:0px;top:0px;}
+  40% {background-color: rgb(8, 0, 255); border-radius: 50% ;left:200px;top:0px;}
+  60% {background-color: rgb(0, 255, 8); border-radius: 50%; left:0px;top:200px;}
+  80% {background-color: rgb(255, 238, 0); border-radius: 50%;  left:0px;top:200px;}
+  100% {background-color: #a80077; border-radius: 0%; left:0px;top:0px;}
   
 }
 </style>
