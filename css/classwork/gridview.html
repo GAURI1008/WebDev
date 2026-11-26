@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3,1fr);
+   gap: 16px;
+   padding: 20px;
+   height:100vh;
+   width:98%;
+    }
+
+.item {
+    aspect-ratio: 1 / 1; 
+  background: #0c0b0e;
+  color: #0b0707;
+  
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  
+  font-size: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 0;
+  min-width: 0;
+  
+}
+.item img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: none;
+    grid-auto-rows: calc((100vh-20px)/ 3);
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: calc((100vh-20px)/ 3);
+    height: auto;
+  }
+}
+</style>
+      
+</head>
+<body>
+   <div class="grid-container">
+  <div class="item" ><img src="3rd.jpeg" alt="1"></div>
+  <div class="item"><img src="8th photo.jpeg"></div>
+  <div class="item"><img src="1st photo.jpeg"></div>
+  <div class="item"><img src="4th photo.jpeg"></div>
+  <div class="item"><img src="5th photo.jpeg"></div>
+  <div class="item"><img src="6th photo.jpeg"></div>
+  <div class="item"><img src="7th photo.jpeg"></div>
+  <div class="item"><img src="2nd photo.jpeg"></div>
+  <div class="item"><img src="9th photo.jpeg"></div>
+</div>
+</body>
+</html>
